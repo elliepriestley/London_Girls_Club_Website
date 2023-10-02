@@ -33,7 +33,7 @@ This is a front-end application, mainly focused on HTML and CSS, with some funct
 2. Clone your fork to your local machine
 
 
-## Showcase Graphics
+## 🔍 Showcase Graphics
 ![image showcasing homepage of Website](/Showcase_Graphics/Frame%206649.jpeg)
 ![image showcasing homepage and food page of Website](/Showcase_Graphics/Frame%206650.jpeg)
 
