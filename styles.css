@@ -1,0 +1,246 @@
+/*ensuring the hyperlinks don't change the format*/
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0px;
+  font-family: "Halvetica", "Arial";
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-weight: 700;
+  font-size: 70px;
+  color: #000000;
+}
+
+.special {
+  font-family: "Helvetica";
+  font-weight: 700;
+  font-size: 70px;
+  color: #ff9999;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.topnav {
+  top: 0;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background: white;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Style for links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Colour of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Colour to the active/current link */
+.topnav a.active {
+  text-decoration: underline;
+  color: #ff9999;
+  font-weight: 900;
+}
+
+button,
+.btn2,
+.btn3,
+.btn4 {
+  display: flex;
+  width: 274px;
+  height: 62px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #ff9999;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-decoration: none;
+  /* vertical-align: middle; */
+}
+
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.contact-us-btn:hover {
+  background: #fa6363;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  display: block;
+  top: 300px;
+  height: auto;
+  background: #000;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 0px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: #ddd;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: gray;
+  padding: 10px 0px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 10px 0px;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #ff9999;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 10px;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#tagline1 {
+  order: 1;
+  width: 100%;
+
+  flex-grow: 2;
+}
+#tagline2 {
+  order: 2;
+  flex-grow: 1;
+}
+
+.contact-us-btn {
+  order: 3;
+  flex-grow: 0.5;
+  align-self: baseline;
+}
+
+.Interests {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.Travel,
+.Fitness,
+.Food {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  align-content: center;
+  position: relative;
+  float: left;
+  gap: 40px;
+}
+
+.btn2,
+.btn3,
+.btn4 {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  object-fit: cover;
+  align-self: center;
+  justify-content: center;
+  float: left;
+}
